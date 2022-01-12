@@ -1,11 +1,22 @@
 <div class="modal-header">
-    <h4 class="modal-title">Hi there!</h4>
-    <button type="button" class="close" aria-label="Close" (click)="closeModal('dismiss')">
+    <h4 class="modal-title">Inicio de sesión</h4>
+    <button type="button" class="close closeButton" aria-label="Close" (click)="closeModal('dismiss')">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
   <div class="modal-body">
-    <p>Hello!</p>
+    
+    <form>
+      <div class="mb-3">
+        <label for="exampleInputEmail1" class="form-label ">Ingresa correo</label>
+        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+      </div>
+      <div class="mb-3">
+        <label for="exampleInputPassword1" class="form-label">Ingresa contraseña</label>
+        <input type="password" class="form-control" id="exampleInputPassword1">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
 
   </div>
   <div class="modal-footer">
